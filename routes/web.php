@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//ini route mengarah ke /resource/views/index.php
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
