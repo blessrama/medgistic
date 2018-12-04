@@ -10,15 +10,18 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $primarykey = [
+        'User_ID',
+    ];
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'User_nama', 'User_email', 'User_alamat' 'password',
     ];
-
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -27,4 +30,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function userOrders()
+    {
+        return $this->hasMany('App\Pesanan');
+    }
 }
