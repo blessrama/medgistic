@@ -21,7 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
-    <link href="css/product-desc.css" rel="stylesheet">
+    <link href="css/login_signup.css" rel="stylesheet">
 
 
 
@@ -50,11 +50,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#partners">Partners</a>
             </li>
-            <!-- <li class="nav-item">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">
                 Sign In
               </button>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
@@ -294,24 +294,72 @@
       </div>
     </footer>
 
-    <!-- Product Modal 3 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ProductModal3">Sign In</h5>
+            <h5 class="modal-title" id="ProductModal3">Masuk</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-              
-          </div>
+          <div class="modal-body col-lg-12 login-form-1">
+                <h3>Selamat datang kembali!</h3>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Alamat Email *" value="" />
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password Anda *" value="" />
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btnSubmit" value="Login" />
+                  </div>
+                  <div class="form-group">
+                    <a data-dismiss="modal" data-toggle="modal" href="#signUpModal" class="ForgetPwd">Belum punya akun? Daftar dulu!</a>
+                  </div>
+                </form>
           </div> 
         </div>
       </div>
     </div>
   </div>
+
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ProductModal3">Daftar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body col-lg-12 login-form-1">
+                    <h3>Halo Pendatang! Silahkan Daftar Dulu Yaaaa!</h3>
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nama Depan *" value="" />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Nama Belakang *" value="" />
+                        </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Alamat Email *" value="" />
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password Anda *" value="" />
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Daftar" />
+                      </div>
+                    </form>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
