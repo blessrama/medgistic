@@ -27,6 +27,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
       <div class="container">
+      @include('flash::message')
+
         <a class="navbar-brand" href="#">Medgistic</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -229,7 +231,8 @@
             <h2 class="mb-4">Tertarik? Daftarkan fasilitas kesehatan anda!</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
+            <form method="POST" action="/langganan">
+            @csrf
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
                   <input type="email" class="form-control form-control-lg" placeholder="Masukkan e-mail anda...">
