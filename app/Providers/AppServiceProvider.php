@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Providers;
+use Illuminate\Support\Facades\Schema;
 
 use Illuminate\Support\ServiceProvider;
+use IlluminateSupportFacadesSchema; //Add this to the top of the file
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,6 +16,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        Schema::defaultStringLength(191); //Add this line to the boot function
+
     }
 
     /**
