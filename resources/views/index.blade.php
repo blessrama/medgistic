@@ -20,7 +20,6 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
@@ -235,8 +234,7 @@
             <h2 class="mb-4">Tertarik? Daftarkan fasilitas kesehatan anda!</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form method ="POST" action=>
-            
+            <form>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
                   <input type="email" class="form-control form-control-lg" placeholder="Masukkan e-mail anda...">

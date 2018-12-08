@@ -25,11 +25,4 @@ class HomeController extends Controller
     {
         return view('index');
     }
-
-    public function daftarEmail(Request $request)
-    {
-        $email = $request->input('email');
-        flash('Terimakasih telah mendaftarkan email anda');
-        return index();
-    }
 }
