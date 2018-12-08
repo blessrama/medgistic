@@ -14,5 +14,3 @@
 Route::get('/', function () {
     return view('index');
 });
-
-Route::post('/langganan','HomeController@langganan');
