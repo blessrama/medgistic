@@ -41,7 +41,7 @@ class HomeController extends Controller
 
     function product($id)
     {   
-        echo $id;
+       
         if($id==1){
             return view('product.1');
         }else

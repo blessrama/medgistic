@@ -51,11 +51,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#partners">Partners</a>
             </li>
-            <li class="nav-item">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">
-                Sign In
-              </button>
-            </li>
+            
           </ul>
         </div>
       </div>
