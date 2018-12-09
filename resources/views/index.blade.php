@@ -155,7 +155,7 @@
           </div>
           <div class="col-md-6 mx-auto" >
             <!-- <button class="btn btn-block btn-lg btn-primary" href="product/product.html">Beli Sekarang!</button> -->
-            <a class="btn btn-primary btn-block btn-lg" href="http://40.83.103.79/apotik-final/" role="button"><h2 class="mb-2" id="products">DEMONSTRASI WEBSITE</h2></a>
+            <a class="btn btn-primary btn-block btn-lg" href="http://40.83.103.79/apotik-final/barang/listBarang" role="button"><h2 class="mb-2" id="products">DEMONSTRASI WEBSITE</h2></a>
           </div>
           
       </div> <!-- row.// -->
