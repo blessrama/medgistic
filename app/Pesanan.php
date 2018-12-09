@@ -6,23 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pesanan extends Model
 {
-    const CREATED_AT = 'Order_TanggalPesan';
-
-    protected $primarykey = [
-        'Order_ID',
-    ];
-    
+    protected $table = 'buy';
     protected $fillable = [
-        'Order_TotalHarga',
+        'first_name', 'last_name', 'email' ,'telp','paket'
     ];
     
-    public function orderUsers()
-    {
-        return $this->hasMany('App\User');
-    }
-
-    public function orderProducts()
-    {
-        return $this->hasMany('App\Produk');
-    }
+   
 }

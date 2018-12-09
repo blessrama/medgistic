@@ -9,10 +9,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-
-    protected $primarykey = [
-        'User_ID',
-    ];
+    
+    protected $table = 'users';
 
     /**
      * The attributes that are mass assignable.
@@ -20,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'User_nama', 'User_email', 'User_alamat' 'password',
+        'first_name', 'last_name', 'email' ,'password'
     ];
     /**
      * The attributes that should be hidden for arrays.
@@ -31,8 +29,5 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function userOrders()
-    {
-        return $this->hasMany('App\Pesanan');
-    }
+  
 }
