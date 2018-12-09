@@ -21,6 +21,8 @@ class Buy extends Migration
             $table->string('paket');
             $table->string('email');
             $table->string('telp');
+            $table->string('tipe');
+
             $table->timestamps();
         });
     }

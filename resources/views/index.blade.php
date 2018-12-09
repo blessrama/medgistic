@@ -115,7 +115,7 @@
               <a href="#"><img class="card-img-top" src="img/puskesmas.jpg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="product/product.html" role="button">Paket Fasilitas Kesehatan 1</a>
+                  <a href="{{url('/product/1')}}" role="button">Paket Fasilitas Kesehatan 1</a>
                 </h4>
                 <h5>$3,499.00</h5>
                 <p class="card-text">Sangat menguntungkan bagi penggunaan pada fasilitas kesehatan tingkat 1: Puskesmas, Poliklinik</p>
@@ -131,7 +131,7 @@
               <a href="#ProductModal2"><img class="card-img-top" src="img/pexels-photo-263399.jpeg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="product/product.html" role="button">Paket Fasilitas Kesehatan 2</a>
+                  <a href="{{url('/product/2')}}" role="button">Paket Fasilitas Kesehatan 2</a>
                 </h4>
                 <h5>$5,499.00</h5>
                 <p class="card-text">Sangat menguntungkan bagi penggunaan pada fasilitas kesehatan tingkat 2: Rumah Sakit tipe B dan C</p>
@@ -147,7 +147,7 @@
               <a href="#"><img class="card-img-top" src="img/pexels-photo-668300.jpeg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="product/product.html" role="button">Paket Fasilitas Kesehatan 3</a>
+                  <a href="{{url('/product/3')}}" role="button">Paket Fasilitas Kesehatan 3</a>
                 </h4>
                 <h5>$8,499.00</h5>
                 <p class="card-text">Sangat menguntungkan bagi penggunaan pada fasilitas kesehatan tingkat 3: Rumah Sakit tipe A</p>
@@ -159,7 +159,7 @@
           </div>
           <div class="col-md-6 mx-auto" >
             <!-- <button class="btn btn-block btn-lg btn-primary" href="product/product.html">Beli Sekarang!</button> -->
-            <a class="btn btn-primary btn-block btn-lg" href="" role="button"><h2 class="mb-2" id="products">DEMONSTRASI WEBSITE</h2></a>
+            <a class="btn btn-primary btn-block btn-lg" href="http://40.83.103.79/apotik-final/" role="button"><h2 class="mb-2" id="products">DEMONSTRASI WEBSITE</h2></a>
           </div>
           
       </div> <!-- row.// -->
@@ -241,7 +241,7 @@
             <h2 class="mb-4">Tertarik? Langganan info terbaru!</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form method="POST" action="langganan">
+            <form method="POST" action="{{url('/langganan')}}">
               <div class="form-row">
                 @csrf
                 <div class="col-12 col-md-9 mb-2 mb-md-0">

@@ -8,7 +8,7 @@ class Pesanan extends Model
 {
     protected $table = 'buy';
     protected $fillable = [
-        'first_name', 'last_name', 'email' ,'telp','paket'
+        'first_name', 'last_name', 'email' ,'telp','paket','tipe'
     ];
     
    

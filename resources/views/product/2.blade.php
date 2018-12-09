@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Produk: Fasilitas Kesehatan 1</title>
+    <title>Produk: Fasilitas Kesehatan 2</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -62,7 +62,7 @@
 
     <section class="jumbotron text-center">
         <div class="container">
-            <h1 class="jumbotron-heading">PAKET FASILITAS KESEHATAN 1</h1>
+            <h1 class="jumbotron-heading">PAKET FASILITAS KESEHATAN 2</h1>
             <p class="lead text-muted mb-0">Sangat menguntungkan bagi penggunaan pada fasilitas kesehatan tingkat 1: Puskesmas, Poliklinik</p>
         </div>
     </section>
@@ -72,7 +72,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Fasilitas Kesehatan 1</li>
+                        <li class="breadcrumb-item active" aria-current="page">Fasilitas Kesehatan 2</li>
                     </ol>
                 </nav>
             </div>
@@ -90,7 +90,7 @@
                 <div class="card bg-light mb-3">
                     <div class="card-body">
                         <a href="" data-toggle="modal" data-target="#productModal">
-                            <img class="img-fluid" src="img/puskesmas.jpg" />
+                            <img class="img-fluid" src="img/pexels-photo-263399.jpeg" />
                             <p class="text-center">Zoom</p>
                         </a>
                     </div>
@@ -101,7 +101,7 @@
             <div class="col-12 col-lg-6 add_to_cart_block">
                 <div class="card bg-light mb-3">
                     <div class="card-body">
-                        <p class="price">$3499.00</p>
+                        <p class="price">$5,499.00</p>
                         <form method="get" action="">
                             
                          
@@ -148,7 +148,7 @@
                     <form name="form" method="POST" action="{{url('/buy')}}" onsubmit="return validate()">
                     
                     @csrf
-                    <input name="paket" type="hidden" value="1" />
+                    <input name="paket" type="hidden" value="2" />
 
                     <div class="form-group">
                                 <label for="colors">Tipe Fasilitas Kesehatan</label>

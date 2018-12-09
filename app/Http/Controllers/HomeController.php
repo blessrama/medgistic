@@ -40,9 +40,16 @@ class HomeController extends Controller
     }
 
     function product($id)
-    {
-        if($id=1){
+    {   
+        echo $id;
+        if($id==1){
             return view('product.1');
+        }else
+        if($id==2){
+            return view('product.2');
+        }else
+        if($id==3){
+            return view('product.3');
         }
        
     }
@@ -53,6 +60,7 @@ class HomeController extends Controller
         $data->last_name = $request->input('last_name');
         $data->email = $request->input('email');
         $data->paket = $request->input('paket');
+        $data->tipe = $request->input('tipe');
         $data->telp = $request->input('telp');
         $data->save();
   
