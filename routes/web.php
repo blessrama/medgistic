@@ -11,6 +11,14 @@
 |
 */
 //ini route mengarah ke /resource/views/index.php
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','HomeController@index');
+Route::post('/langganan','HomeController@langganan');
+
+Route::post('/daftar','HomeController@daftar');
+
+Route::get('/product/{id}','HomeController@product');
+
+Route::post('/buy','HomeController@buy');
+
+
+
